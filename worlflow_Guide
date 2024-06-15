@@ -1,0 +1,16 @@
+Workflows are defined in special files in the .github/workflows directory and they execute based on your chosen event. For this exercise, we'll use a pull_request event.
+
+Activity: Create a workflow file
+
+Open a new browser tab, and navigate to this same repository. Then, work on the steps in your second tab while you read the instructions in this tab.
+Navigate to the Code tab.
+From the main branch dropdown, click on the welcome-workflow branch.
+Navigate to the .github/workflows/ folder, then select Add file and click on Create new file.
+In the Name your file... field, enter welcome.yml.
+Add the following content to the welcome.yml file:
+name: Post welcome comment
+    on:
+      pull_request:
+        types: [opened]
+To commit your changes, click Commit new file.
+Wait about 20 seconds for actions to run, then refresh this page (the one you're following instructions from) and an action will automatically close this step and open the next one.
